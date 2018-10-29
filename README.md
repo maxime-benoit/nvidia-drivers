@@ -37,3 +37,28 @@ Regenerate Kernel
     
 And reboot 
     $ sudo reboot
+
+### 5. Check ubuntu-driver
+
+In order to check available drivers you can type 
+
+    $ sudo ubuntu-drivers devices
+
+    == /sys/devices/pci0000:00/0000:00:02.0/0000:02:00.0 ==
+    modalias : pci:v000010DEd000013BBsv0000103Csd00001098bc03sc00i00
+    vendor   : NVIDIA Corporation
+    model    : GM107GL [Quadro K620]
+    driver   : nvidia-driver-390 - distro non-free recommended
+    driver   : nvidia-340 - distro non-free
+    driver   : xserver-xorg-video-nouveau - distro free builtin
+
+nvidia-driver-390 is recommended, you can install it with 
+
+    $ sudo ubuntu-drivers devices
+
+
+Sources : 
+https://forum.ubuntu-fr.org/viewtopic.php?id=2030740
+https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
+https://linuxconfig.org/how-to-disable-nouveau-nvidia-driver-on-ubuntu-18-04-bionic-beaver-linux
+https://askubuntu.com/questions/841876/how-to-disable-nouveau-kernel-driver
