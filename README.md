@@ -22,7 +22,7 @@ Add the following lines to the proxy.conf file :
     $ sudo apt update
     $ sudo apt install build-essential
 
-### 4. Blacklist Nouveau Kernel
+### 4. Blacklist Nouveau Kernel (not necesssary ?)
 
     $ sudo vi /etc/modprobe.d/blacklist-nouveau.conf
 
@@ -56,9 +56,29 @@ nvidia-driver-390 is recommended, you can install it with
 
     $ sudo ubuntu-drivers devices
 
+And reboot 
+
+    $ sudo reboot
+    
+### 6. Install Cuda 
+
+First, Install cuda dependencies 
+
+    $ sudo apt install freeglut3 freeglut3-dev libxi-dev libxmu-dev
+   
+Then download the bash file from CUDA zone : https://developer.nvidia.com/cuda-zone, and run it :
+
+    $ sudo sh cuda_10.0.130_410.48_linux.run
+    
+[WARNING] you should say no when installing the driver (default is yes)
+
+    Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 396.26?
+    (y)es/(n)o/(q)uit: n
+
 
 Sources : 
 https://forum.ubuntu-fr.org/viewtopic.php?id=2030740
 https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
 https://linuxconfig.org/how-to-disable-nouveau-nvidia-driver-on-ubuntu-18-04-bionic-beaver-linux
 https://askubuntu.com/questions/841876/how-to-disable-nouveau-kernel-driver
+https://www.pugetsystems.com/labs/hpc/How-to-install-CUDA-9-2-on-Ubuntu-18-04-1184/
