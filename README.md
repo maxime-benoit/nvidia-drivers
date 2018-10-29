@@ -1,5 +1,5 @@
-# nvidia-drivers
-Deep Learning Configuration for Nvidia Quadro K620 with Ubuntu 18 From Scratch
+# Nvidia Quadro K620 Deep Learning Drivers Configuration with Ubuntu 18.04
+Deep Learning Configuration for Nvidia Quadro K620 with Ubuntu 18.04 From Scratch
 
 ### 1. Install Ubuntu
 
